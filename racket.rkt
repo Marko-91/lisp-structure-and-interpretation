@@ -32,6 +32,7 @@
 
 (define a 3)
 (define b 4)
+(* a b)
 #|
 (cond ((= a 4) 6)
       ((= b 4) (+ 6 7 a))

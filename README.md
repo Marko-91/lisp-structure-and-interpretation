@@ -2,6 +2,8 @@
 
 Enthusiastic solutions for exercises for [Structure and interpretation of computer programs](https://www.amazon.com/Structure-Interpretation-Computer-Programs-Engineering/dp/0262510871)
 
+File names refer to the actual chapter numbers.
+
 ### Instalation
 
 Go to [Rackert download page](https://download.racket-lang.org/)
