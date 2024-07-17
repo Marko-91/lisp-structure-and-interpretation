@@ -1,4 +1,5 @@
 #lang racket
+; #lang lazy
 
 (define (p) (p))
 
@@ -9,8 +10,8 @@
 
 (test 0 (p))
 
-; normal order application. => should enter infinite recursive loop
-; applicative order application. => should evaluta
+; normal order application (lazy). => should evaluate
+; applicative order application. => should enter infinite recursive loop (eager)
 #|
   Quote: "To evalutate an *if* expression, the intepreter starts by eveluating the <predicate>
            part of the expression. If the <predicate> evals to true, the intepreter then evaluates
