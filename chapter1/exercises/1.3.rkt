@@ -4,6 +4,12 @@
 (define y 1)
 (define z 4)
 
+;; sumOfSquares: Number Number Number -> Number
+;; Computes the sum of the squares of the two largest numbers among the three given numbers.
+;; x: The first number.
+;; y: The second number.
+;; z: The third number.
+;; Returns: The sum of the squares of the two largest numbers among x, y, and z.
 (define (square x)
   (* x x))
 (define (sumOfSquares x y z)

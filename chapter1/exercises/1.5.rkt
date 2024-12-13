@@ -1,12 +1,11 @@
 #lang racket
 ; #lang lazy
 
-(define (p) (p))
+(define (p)
+  (p))
 
 (define (test x y)
-  (if (= x 0)
-      0
-      y))
+  (if (= x 0) 0 y))
 
 (test 0 (p))
 

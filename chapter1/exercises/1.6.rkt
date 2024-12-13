@@ -1,16 +1,16 @@
 #lang racket
 
 (define (sqrtIter guess x)
-(if (goodEnough? guess x) ;predicate
-    guess ;thenClause
-    (sqrtIter (improve guess x) ;elseClause
-              x)))
+  (if (goodEnough? guess x) ;predicate
+      guess ;thenClause
+      (sqrtIter (improve guess x) ;elseClause
+                x)))
 
 (define (cubeIter guess x)
-(if (goodEnoughForCube? guess x) ;predicate
-    guess ;thenClause
-    (cubeIter (improveCube guess x) ;elseClause
-              x)))
+  (if (goodEnoughForCube? guess x) ;predicate
+      guess ;thenClause
+      (cubeIter (improveCube guess x) ;elseClause
+                x)))
 
 (define (improve guess x)
   (average guess (/ x guess)))
@@ -40,8 +40,9 @@
   (cubeIter 1.0 x))
 
 (define (myIf predicate thenClause elseClause)
-  (cond (predicate thenClause)
-        (else elseClause)))
+  (cond
+    [predicate thenClause]
+    [else elseClause]))
 
 ; (sqrt 0.00025)
 
